@@ -1,0 +1,142 @@
+/* Over all Container */
+.container {
+    display: flex;
+    max-width: 1256px;
+    margin: auto;
+}
+
+/* Menu Container */
+.container-menu{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+/*  Navigation links */
+nav {
+    display: flex;
+    gap: 40px;
+}
+.ul {
+    display: flex;
+    color: #fff;
+    gap: 80px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+}
+.ul li {
+    text-transform: uppercase;
+}
+
+/* Left Container */
+.container-sign-search{
+    display: flex;
+    border-radius: 20px;
+    background: rgba(128, 128, 128, 0.326);
+    height: 2rem;
+    width: 10%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.login-up{
+    display: flex;
+    color: #fff;
+    font-size: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    width:  100%;
+}
+
+/* Icons Header */
+.search-icon{
+    position: absolute;
+    right: 9rem;
+    top: .5rem;
+}
+
+/* Divider header */
+.mini-divider{
+    height: 1rem;
+    border: 1px solid #fff;
+}
+
+
+/*  Hero Section Upper Header */
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px ;
+    padding-bottom: 70px;
+    gap: 30px;
+}
+h2{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+/* Main Divider */
+.main-divider{
+    width: 10%;
+    border-radius: 2px;
+    height: 5px;
+    background-color: var(--primary-color);
+}
+h1 span{
+    color: var(--primary-color);
+}
+.container-hero p{
+    color: #fff;
+}
+
+
+
+
+/*  Responsive Design  */
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 100%;
+        padding: 2px 20px;
+    }
+    .container-menu{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 375px) {
+    
+}
+@media screen and (min-width: 425px) {
+    
+}
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 1024px) {
+    
+}
+@media screen and (min-width: 1440px) {
+    
+}
+@media screen and (min-width: 320px) {
+    
+}
