@@ -51,6 +51,7 @@ body{
 .placeholder-7{
     background-image: url('../assets//background/7.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -242,6 +243,7 @@ h1 span{
 .cell:hover{
     background: var(--primary-color);
     transform: translate(0,-8px);
+    border-radius: 0px 20px 20px 20px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 #cell-divider{
@@ -301,4 +303,127 @@ h1 span{
     padding-top: 1rem;
 }
 
+/* Our Blog Section */
+.Card-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+    gap: 20px;
+    
+}
+.card{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0px 20px 20px 20px;
+    transition: .3s;
+}
+.card:hover{
+    border-radius: 0px 20px 20px 20px;
+    background: var(--primary-color);
+}
+.card h2{
+    color: #fff;
+}
+.card p {
+    font-size: var(--font-small-size);
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+}
+/* .card img {
+    width: 350px;
+    height: 270px;
+} */
+.see-all-btn{
+    border-radius: 20px;
+    background: #FFF;
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 21px;
+    color: #313131;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 1rem;
+}
+.see-all-btn:hover{
+    box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.1);
+}
+
+
+
+/* Faq Section */
+.faq-container{
+    padding: 0 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.faq-1{
+    border-radius: 0px 20px 20px 20px;
+    background: rgba(49, 49, 49, 0.50);
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+#cta-faq{
+    display: none;
+}
+.faq-1 p {
+    display: none;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.faq-1{
+    font-size: 12px
+}
+
+#cta-faq:checked ~ p{
+    display: block;
+}
+#cta-faq:checked ~ label{
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+}
+
+/* Testimonials */
+.form-container{
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.658);
+}
+
+form label{
+    color: black;
+    font-size: 12px;
+}
+input{
+    height: 39px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+.submit-btn{
+    margin-top: 20px;
+    border-radius: 20px;
+}
 
