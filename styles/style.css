@@ -225,6 +225,8 @@ h1 span{
     grid-template-columns: 1fr; /* Switch to a single column */
     width: 100%; /* Full width for mobile devices */
     gap: 100px;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 .cell {
     position: relative;
@@ -250,6 +252,7 @@ h1 span{
 }
 .span{
     transition: .3s;
+    line-height: 100%;
 }
 .cell:hover .span{
     color: #fff !important;
@@ -258,6 +261,7 @@ h1 span{
 .cell-label{
     font-size: 20px;
     font-weight: 700;
+    line-height: 100%;
 }
 .cell-title{
     font-size: 25px;
