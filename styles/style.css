@@ -407,6 +407,7 @@ h1 span{
 form{
     display: flex;
     flex-direction: column;
+    gap: 5px;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.658);
 }
@@ -419,8 +420,9 @@ input{
     height: 39px;
     border-radius: 10px;
     outline: none;
-    border: none;
+    border: 1px solid gray;
     padding: 0 10px;
+    background-color: transparent;
 }
 .submit-btn{
     margin-top: 20px;
