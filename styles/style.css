@@ -104,11 +104,8 @@ li a{
     cursor: pointer;
 
 }
-/* #toggle{
-    display: ;
-} */
-.checkbox-toggle{
-    /* display: none; */
+#toggle{
+    display: none ;
 }
 
 #toggle:checked ~ .ul{
