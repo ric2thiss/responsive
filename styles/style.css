@@ -571,6 +571,7 @@ footer{
     }
 }
 @media screen and (min-width:1024px) {
+
     .container-menu{
         display: flex;
         justify-content: space-between;
@@ -646,5 +647,15 @@ footer{
     .container{
         max-width: 1200px;
         margin: auto;
+    }
+    .Benefits, 
+    .About, 
+    .Blog, 
+    .Services,
+    .Hero{
+        padding-top: 6rem;
+    }
+    .container-hero{
+        gap: 30px;
     }
 }
