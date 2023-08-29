@@ -104,8 +104,11 @@ li a{
     cursor: pointer;
 
 }
-#toggle{
-    display: none;
+/* #toggle{
+    display: ;
+} */
+.checkbox-toggle{
+    /* display: none; */
 }
 
 #toggle:checked ~ .ul{
@@ -558,7 +561,8 @@ footer{
     }
     .card{
         width: 45%;
-    }.footer-container{
+    }
+    .footer-container{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -613,5 +617,37 @@ footer{
         gap: .5rem;
         align-items: center;
         justify-content: flex-end;
+    }
+
+    /* Hero Section */
+
+    .container-hero h2{
+        font-size: 16px;
+    }
+    .container-hero h1{
+        font-size: var(--font-title-size);
+    }
+    /* Service Section */
+    .grid {
+        /* margin-top: 2rem; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        gap: 36px;
+    }
+
+
+    /* Our Blog */
+    .card{
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        max-width: 1200px;
+        margin: auto;
     }
 }
