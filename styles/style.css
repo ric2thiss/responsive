@@ -235,7 +235,7 @@ h1 span{
     flex-direction: column;
     gap: 20px;
     color: #fff;
-    padding: 1rem 8px;
+    padding: 10px 5px;
     border-radius: 0px 20px 20px 20px;
     transition: .3s;
     cursor: pointer;
@@ -319,7 +319,7 @@ h1 span{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 90%;
+    width: 99%;
     cursor: pointer;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -429,5 +429,92 @@ input{
 .submit-btn{
     margin-top: 20px;
     border-radius: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
 }
 
+footer{
+    background: var(--secondary-color);
+    color: #fff;
+}
+.quick-links{
+    display: flex;
+    justify-content: space-around;
+}
+.title-links{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.company {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.company a{
+    text-decoration: none;
+    color: #ffffffb0;
+    font-size: 12px;
+    font-weight: 300;
+}
+.form-for-newsletter{
+    background-color: transparent;
+}
+
+.form-for-newsletter label{
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13.91px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.input-for-email{
+    display: flex;
+    height: 58px;
+}
+.email{
+    border-radius: 0px 0px 0px 20px;
+    border: 1px solid #595959;
+    background: #313131;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+.subscribe-btn{
+    border-radius: 0px 20px 20px 0px;
+    background: #FFF;
+    color: #313131;
+    font-family: 'Poppins',sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    height: 100%;
+}
+.social-links{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.social-links p{
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13.91px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.links{
+    display: flex;
+    gap: 38px;
+    margin-top: 10px;
+}
+.Rights{
+    margin-top: 2rem;
+}
