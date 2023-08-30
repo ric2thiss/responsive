@@ -710,4 +710,7 @@ textarea{
     .form-container{
         padding-bottom: 70px;
     }
+    form{
+        padding: 30px;
+    }
 }
