@@ -530,6 +530,15 @@ footer{
     font-weight: 400;
     line-height: normal;
 }
+textarea{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* Next to fix is the mobile version */
 
 @media screen and (min-width:768px) {
     .container-hero{
@@ -568,6 +577,31 @@ footer{
         display: flex;
         gap: 16px;
         justify-content: flex-start;
+    }
+    .submit-btn{
+        display: flex;
+        width: 336px;
+        padding: 10px 20px;
+        justify-content: center;
+        gap: 21px;
+        border-radius: 20px;
+        background: #0F9FF7;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .form-inputs-container{
+        display: flex;
+        width: 100%;
+        gap: 12px;
+    }
+    .form-inputs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 @media screen and (min-width:1024px) {
@@ -640,6 +674,21 @@ footer{
     .card{
         width: 30%;
     }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .form-inputs-container{
+        display: flex;
+        width: 100%;
+        gap: 12px;
+    }
+    .form-inputs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
 
 }
 
