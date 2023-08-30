@@ -500,6 +500,7 @@ footer{
     line-height: normal;
     letter-spacing: 2.2px;
     height: 100%;
+    text-transform: uppercase;
 }
 .social-links{
     margin-top: 2rem;
@@ -712,5 +713,8 @@ textarea{
     }
     form{
         padding: 30px;
+    }
+    footer{
+        padding-top: 40px;
     }
 }
