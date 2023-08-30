@@ -37,13 +37,13 @@
                     </ul>
                 </nav>
                 <div class="container-sign-search">
-                    <div>
+                    <div class="search-modal">
                         <img src="./assets/features/search.svg" alt="" class="search-icon">
                     </div>
                     <div class="login-up">
-                        <p>Sign In</p>
+                        <p class="login-modal">Sign In</p>
                         <span class="mini-divider"></span>
-                        <p>Sign Up</p>
+                        <p class="sign-up-modal">Sign Up</p>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,7 @@
             </div>
         </div>
         <div class="form-container">
-            <form>
+            <form class="reachoutForm">
                 <div class="form-inputs-container">
                     <div class="form-inputs">
                         <label for="lname">Last Name</label>
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <label for="message">Your Messages</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="Send Message" class="submit-btn">
             </form>
         </div>
@@ -364,5 +364,84 @@
         </div>
         <p class="Rights">Copyright &copy; 2023 Viking Universe. All Rights Reserved.</p><br/>
     </footer>
+    <!-- End Footer -->
+    <dialog data-modal class="modal">
+        <div class="login">
+            <h4>User Login</h4>
+                <form class="login-Form">
+                        <label for="username">Username</label>
+                        <input type="text" class="userInput">
+                        <label for="username">Password</label>
+                        <input type="text" class="userInput">
+                        <div class="loginFormContainer">
+                            <div>
+                                <input type="checkbox" name="" id="rememberme">
+                                <label for="rememberme">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="">Forgot Password</a>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Sign In" class="loginBtn">
+                </form>
+        </div>
+    </dialog>
+
+    <!-- Sign up Modal Form -->
+    <dialog data-modal class="modal">
+        <div class="login">
+            <h4>Create Account</h4>
+                <form class="login-Form">
+                        <div class="Names">
+                            <div>
+                                <label for="Fname">First Name</label>
+                                <input type="text" name="" id="Fname">
+                            </div>
+                            <div>
+                                <label for="Lname">Last Name</label>
+                                <input type="text" name="" id="Lname">
+                            </div>
+                        </div>
+                        <label for="username">Email</label>
+                        <input type="text" class="userInput">
+                        <label for="username">Password</label>
+                        <input type="text" class="userInput">
+                        <div class="loginFormContainer">
+                            <div>
+                                <input type="checkbox" name="" id="rememberme">
+                                <label for="rememberme">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="">Forgot Password</a>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Sign In" class="loginBtn">
+                </form>
+        </div>
+    </dialog>
+      <!-- JavaScript -->
+    <script>
+        const modal = document.querySelector('[data-modal]')
+        const opeBtn = document.querySelector('.login-modal')
+        opeBtn.addEventListener('click',()=> {
+            modal.showModal()
+            document.body.style.overflowY = 'hidden';
+        })
+        const dialog = document.querySelector("dialog")
+        dialog.addEventListener("click", e => {
+        const dialogDimensions = dialog.getBoundingClientRect()
+        if (
+            e.clientX < dialogDimensions.left ||
+            e.clientX > dialogDimensions.right ||
+            e.clientY < dialogDimensions.top ||
+            e.clientY > dialogDimensions.bottom
+        ) {
+            dialog.close()
+            document.body.style.overflowY = 'scroll';
+        }
+        })
+    </script>
 </body>
 </html>
