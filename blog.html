@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Viking Universe</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="placeholder-5">
+        <div class="container">
+            <div class="container-hero Blog">
+                <h2>Our Blog</h2>
+                <h1>Our Latest <span>News</span>.</h1>
+                <span class="main-divider"></span>
+                <p>Learn about the latest industry insights, expert advice, and remarkable success stories crafted exclusively to inspire your entrepreneurial spirit and drive your business towards unparalleled growth.</p>
+            </div>
+            <div class="Card-Container"></div>
+            <div class="see-all-container">
+                <!-- <a href="blog.html" class="see-all-btn">SEE ALL</a> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        // Declare Global Variable
+        const Card_Container = document.querySelector('.Card-Container')
+    
+        fetch('./data.json')
+        .then(res => res.json())
+        .then(data => {
+            const { blogs } = data;
+            
+            for (let blog of blogs) {
+                // Create DOM elements
+                let dateElement = document.createElement('p');
+                let contentElement = document.createElement('p');
+                let imgElement = document.createElement('img');
+                let titleElement = document.createElement('h2');
+    
+                // Set content and attributes for the elements
+                dateElement.textContent = blog.date;
+                contentElement.textContent = blog.content;
+                imgElement.src = blog.image;
+                titleElement.textContent = blog.title;
+    
+                let div = document.createElement('div');
+                div.classList.add('card');
+                div.appendChild(imgElement);
+                div.appendChild(titleElement);
+                div.appendChild(dateElement);
+                div.appendChild(contentElement);
+    
+                Card_Container.appendChild(div);
+            }
+        })
+    </script>
+    
+</body>
+</html>
