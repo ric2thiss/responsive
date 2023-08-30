@@ -693,7 +693,7 @@ textarea{
 }
 
 @media screen and (min-width: 1440px) {
-    .container{
+    .container,.form-container{
         max-width: 1200px;
         margin: auto;
     }
@@ -706,5 +706,8 @@ textarea{
     }
     .container-hero{
         gap: 30px;
+    }
+    .form-container{
+        padding-bottom: 70px;
     }
 }
