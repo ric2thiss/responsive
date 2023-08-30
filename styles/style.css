@@ -714,6 +714,10 @@ textarea{
     form{
         padding: 30px;
     }
+    .quick-links{
+        display: flex;
+        gap: 70px;
+    }
     footer{
         padding-top: 40px;
     }
