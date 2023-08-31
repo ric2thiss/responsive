@@ -10,6 +10,7 @@
     --font-desc-size: 14px;
     --weight-hero: 700 !important;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -115,6 +116,7 @@ li a{
 
 .services-icon-arrow{
     display: flex;
+    /* position: relative; */
     /* justify-content: space-between; */
 }
 
@@ -127,8 +129,17 @@ li a{
 } */
 .sub-nab{
     display: none;
+    background:#313131;
     padding: 0;
-    margin: 0;
+    margin-top: .8rem; 
+    /* position: absolute; */
+}
+.sub-ul{
+    display: none;
+}
+.sub-nav-2:hover .sub-ul {
+    display: flex;
+    flex-direction: column;
 }
 .services-icon-arrow:hover .sub-nab{
     display: flex;
@@ -301,6 +312,7 @@ h1 span{
 }
 .Blog{
     padding-top: 5rem;
+    position: relative;
 }
 .Services {
     padding-top: 5rem;
@@ -539,7 +551,7 @@ footer{
     margin-top: 10px;
 }
 .Rights{
-    margin-top: 2rem; 
+    margin-top: 3rem; 
     display: flex;
     justify-content: center;
     color: #ffffffad;
@@ -844,4 +856,10 @@ dialog::backdrop {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.back-links{
+    position: absolute;
+    color: #FFF;
+    right: 6%;
+    cursor: pointer;
 }
