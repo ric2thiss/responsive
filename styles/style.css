@@ -874,9 +874,11 @@ dialog::backdrop {
 }
 #Fname{
     width: 100%;
+    color: #fff;
 }
 #Lname {
     width: 100%;
+    color: #fff;
 }
 .old-user-login{
     color: #0F9FF7;
