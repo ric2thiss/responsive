@@ -202,17 +202,19 @@ li a{
 }
 .container-hero h2{
     color: var(--primary-color);
-    font-size: 14px;
+    font-size: 20px !important;
     font-weight: 600 !important;
-    letter-spacing: 3px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 6px;
 }
 .container-hero h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 50px !important;
     line-height: 100%;
+    font-style: normal;
     font-weight: var(--weight-hero) !important;
 }
 h1 span{
@@ -228,7 +230,7 @@ h1 span{
     font-family: 'Poppins',sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 300 !important;
     line-height: normal;
 }
 .about-btn{
@@ -324,7 +326,7 @@ h1 span{
     padding-top: 5rem;
 }
 .Hero {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 /* Our Blog Section */
@@ -516,6 +518,12 @@ footer{
 .form-for-newsletter{
     background-color: transparent;
 }
+/* .news-letter{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
 .form-for-newsletter label{
     color: #FFF;
@@ -553,7 +561,7 @@ footer{
     text-transform: uppercase;
 }
 .social-links{
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1rem;
 }
 .social-links p{
@@ -751,12 +759,14 @@ textarea{
         max-width: 1200px;
         margin: auto;
     }
+    .Hero{
+        padding-top: 5rem;
+    }
     .Benefits, 
     .About, 
     .Blog, 
-    .Services,
-    .Hero{
-        padding-top: 6rem;
+    .Services{
+        padding-top: 9rem;
     }
     .container-hero{
         gap: 30px;
@@ -773,6 +783,38 @@ textarea{
     }
     footer{
         padding-top: 40px;
+    }
+    
+    .sub-nab li{
+        padding: 12px 10px !important;
+        /* background-color: #0F9FF7; */
+        width: 200px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+    .sub-nab{
+        display: none;
+        background:#313131;
+        padding: 0;
+        margin-top: .8rem; 
+        border-radius: 0px 20px 20px 20px;
+        background: #313131;
+    }
+    /* .sub-nav-2{
+        width: 100% !important;
+        height: 100% !important;
+    } */
+    .sub-ul{
+        display: none;
+        position: absolute;
+        left: 101%;
+        top: 0;
+        padding: 0;
+        background:#313131;
+        border-radius: 0px 20px 20px 20px;
     }
 }
 
