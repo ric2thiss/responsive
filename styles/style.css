@@ -278,12 +278,12 @@ h1 span{
 }
 
 .cell-label{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 100%;
 }
 .cell-title{
-    font-size: 25px;
+    font-size: 30px;
     text-transform: uppercase;
     line-height: 100%;
     font-weight: 700 !important;
@@ -434,6 +434,7 @@ h1 span{
     padding: 1rem;
     background: rgba(255, 255, 255, 0.658);
 }
+
 .textarea{
     resize: none;
     padding: 10px;
@@ -472,10 +473,6 @@ footer{
     padding: 1rem;
     color: #fff;
 }
-/* .footer-logo{
-    width: 250px;
-    height: 120px;
-} */
 .quick-links{
     display: flex;
     justify-content: space-around;
@@ -800,7 +797,7 @@ dialog::backdrop {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .login-Form{
@@ -816,7 +813,7 @@ dialog::backdrop {
 .login-Form label{
     color: #5F5F5F;
     font-family: 'Poppins',sans-serif;
-    font-size: 12.922px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -833,7 +830,7 @@ dialog::backdrop {
 .loginFormContainer div a{
     color: #0F9FF7;
     font-family: 'Poppins',sans-serif;
-    font-size: 9.691px;
+    font-size: 10px;
     font-style: normal;
     text-decoration: none;
     font-weight: 300;
@@ -847,7 +844,7 @@ dialog::backdrop {
     background: #313131;
     display: flex;
     width: 336px;
-    margin-top: 40px;
+    margin-top: 30px;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -866,4 +863,55 @@ dialog::backdrop {
     color: #FFF;
     right: 6%;
     cursor: pointer;
+}
+
+
+/* Signup modal */
+
+.Names{
+    display: flex;
+    gap: 16px;
+}
+#Fname{
+    width: 100%;
+}
+#Lname {
+    width: 100%;
+}
+.old-user-login{
+    color: #0F9FF7;
+    font-family: 'Poppins',sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+.text-old-user{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Poppins',sans-serif;
+    font-size: 9.691px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.signupBtn{
+    border-radius: 20px;
+    background: #313131;
+    display: flex;
+    width: 336px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

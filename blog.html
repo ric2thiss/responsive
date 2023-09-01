@@ -37,7 +37,8 @@
             const { blogs } = data;
             
             for (let blog of blogs) {
-                // Create DOM elements
+                if(blog.category === "All"){
+                    // Create DOM elements
                 let dateElement = document.createElement('p');
                 let contentElement = document.createElement('p');
                 let imgElement = document.createElement('img');
@@ -57,6 +58,7 @@
                 div.appendChild(contentElement);
     
                 Card_Container.appendChild(div);
+                }
             }
         })
     </script>

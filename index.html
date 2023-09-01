@@ -45,9 +45,10 @@
                         <img src="./assets/features/search.svg" alt="" class="search-icon">
                     </div>
                     <div class="login-up">
-                        <p class="login-modal">Sign In</p>
+                        <!-- Add data-modal attribute to your buttons -->
+                        <p class="login-modal" data-target="login">Sign In</p>
                         <span class="mini-divider"></span>
-                        <p class="sign-up-modal">Sign Up</p>
+                        <p class="sign-up-modal" data-target="signup">Sign Up</p>
                     </div>
                 </div>
             </div>
@@ -88,38 +89,38 @@
                 <div class="cell">
                     <img src="./assets/features/cell2.svg" alt="">
                     <p class="cell-label">Content Creation</p>
-                    <p class="cell-title">Embrace the power of visual <span class="span">storytelling</span>.</p>
+                    <p class="cell-title">Embrace the <br>power of visual <br><span class="span">storytelling</span>.</p>
                     <span id="cell-divider" class="main-divider"></span>
                     <p class="cell-desc">Experience the art of captivating storytelling through our exceptional video editing and animation services. Our skilled team crafts immersive narratives, blending seamless transitions and captivating animations that ignite emotions and leave a lasting impact. From concept to final cut, we transform your vision into a masterpiece, ensuring your videos captivate and engage your audience like never before.</p>
                 </div>
                 <div class="cell">
                     <img src="./assets/features/cell3.svg" alt="">
                     <p class="cell-label">Marketing</p>
-                    <p class="cell-title">Rule your market, achieve <span class="span">greatness</span>.</p>
+                    <p class="cell-title">Rule your market, <br> achieve <span class="span">greatness</span>.</p>
                     <span id="cell-divider" class="main-divider"></span>
-                    <p class="cell-desc">Experience the art of captivating storytelling through our exceptional video editing and animation services. Our skilled team crafts immersive narratives, blending seamless transitions and captivating animations that ignite emotions and leave a lasting impact. From concept to final cut, we transform your vision into a masterpiece, ensuring your videos captivate and engage your audience like never before.</p>
+                    <p class="cell-desc">Harness the full potential of our marketing expertise to establish your brand as an unrivaled leader. With our cutting-edge marketing strategies, strategic insights, and impactful campaigns, we empower you to rule your market, attract a loyal customer base and amplify your brand's visibility.</p>
                 </div>
                 <div class="divider"></div>
                 <div class="cell">
                     <img src="./assets/features/cell4.svg" alt="">
                     <p class="cell-label">Business & <br>Operational Assist.</p>
-                    <p class="cell-title">Power up your business, <span class="span">surpass</span>boundaries.</p>
+                    <p class="cell-title">Power up your <br> business, <span class="span">surpass</span>boundaries.</p>
                     <span id="cell-divider" class="main-divider"></span>
-                    <p class="cell-desc">Experience the art of captivating storytelling through our exceptional video editing and animation services. Our skilled team crafts immersive narratives, blending seamless transitions and captivating animations that ignite emotions and leave a lasting impact. From concept to final cut, we transform your vision into a masterpiece, ensuring your videos captivate and engage your audience like never before.</p>
+                    <p class="cell-desc">Unlock unparalleled growth and efficiency with our Business and Operational Assistance services. We empower your growth, streamline operations, and propel your business to surpass boundaries. With our strategic guidance and operational excellence, we're your go-to solution for achieving remarkable success.</p>
                 </div>
                 <div class="cell">
                     <img src="./assets/features/cell5.svg" alt="">
                     <p class="cell-label">Accounting & <br> Finance</p>
-                    <p class="cell-title">Secure your finances, Thrive with <span class="span">Confidence</span>.</p>
+                    <p class="cell-title">Secure your <br> finances, Thrive <br> with <span class="span">Confidence</span>.</p>
                     <span id="cell-divider" class="main-divider"></span>
-                    <p class="cell-desc">Experience the art of captivating storytelling through our exceptional video editing and animation services. Our skilled team crafts immersive narratives, blending seamless transitions and captivating animations that ignite emotions and leave a lasting impact. From concept to final cut, we transform your vision into a masterpiece, ensuring your videos captivate and engage your audience like never before.</p>
+                    <p class="cell-desc">Take control of your financial success with our comprehensive Accounting and Finance solutions. With meticulous bookkeeping, strategic planning, and expert guidance, we pave the way for your financial growth, ensuring a secure and thriving future. Embrace our solutions and witness the transformative impact they have on your bottom line.</p>
                 </div>
                 <div class="cell">
                     <img src="./assets/features/cell6.svg" alt="">
                     <p class="cell-label">Technology <br>Development</p>
-                    <p class="cell-title">Embrace the power of visual <span class="span">storytelling</span>.</p>
+                    <p class="cell-title">Embrace <br> Technological <span class="span">advancement</span>.</p>
                     <span id="cell-divider" class="main-divider"></span>
-                    <p class="cell-desc">Experience the art of captivating storytelling through our exceptional video editing and animation services. Our skilled team crafts immersive narratives, blending seamless transitions and captivating animations that ignite emotions and leave a lasting impact. From concept to final cut, we transform your vision into a masterpiece, ensuring your videos captivate and engage your audience like never before.</p>
+                    <p class="cell-desc">Step into a world of innovation with our exceptional Technology Development services. We fuel your business with the power of technology, unlocking new possibilities and driving growth. From user-friendly software solutions to cutting-edge applications, we simplify complexity and empower you to embrace the future. Experience the impact of our solutions as we revolutionize your business in the digital age.</p>
                 </div>
             </div>
         </div>
@@ -139,9 +140,10 @@
                 <div class="cell">
                     <img src="./assets/features/cell7.svg" alt="">
                     <!-- <p class="cell-label">Maximize your</p> -->
-                    <p class="cell-title"><span class="span">Maximize</span> your productivity.</p>
+                    <p class="cell-title"><span class="span">Maximize</span> your <br> productivity.</p>
                     <span id="cell-divider" class="main-divider"></span>
-                    <p class="cell-desc">Say goodbye to overwhelming tasks and unleash your team's full potential. Our tailored solutions will streamline your operations, freeing up time and resources for what truly matters - driving your business forward.</p>
+                    <p class="cell-desc">Say goodbye to overwhelming tasks and unleash your team's full potential. Our tailored solutions will streamline your operations, freeing up time and resources for what truly matters
+                        - driving your business forward.</p>
                 </div>
                 <div class="cell">
                     <img src="./assets/features/cell8.svg" alt="">
@@ -197,7 +199,7 @@
     <!-- Our Blog Section -->
     <div class="placeholder-5">
         <div class="container">
-            <div class="container-hero Blog">
+            <div class="container-hero Blog" id="blog">
                 <h2>Our Blog</h2>
                 <h1>Our Latest <span>News</span>.</h1>
                 <span class="main-divider"></span>
@@ -282,7 +284,7 @@
         </div>
     </div>
     <div class="placeholder-7">
-        <div class="container" id="blog">
+        <div class="container">
             <div class="container-hero Blog">
                 <h2>Testimonials</h2>
                 <h1>Get In <span>Touch</span>.</h1>
@@ -294,7 +296,7 @@
             <form class="reachoutForm">
                 <div class="form-inputs-container">
                     <div class="form-inputs">
-                        <label for="lname">Last Name</label>
+                        <label for="lname" class="lname-label">Last Name</label>
                         <input type="text" id="lname">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname">
@@ -372,7 +374,7 @@
 
 
     <!-- End Footer -->
-    <dialog data-modal class="modal">
+    <dialog data-modal="login" class="modal">
         <div class="login">
             <h4>User Login</h4>
                 <form class="login-Form">
@@ -396,7 +398,7 @@
     </dialog>
 
     <!-- Sign up Modal Form -->
-    <dialog data-modal class="modal">
+    <dialog data-modal="signup" class="modal">
         <div class="login">
             <h4>Create Account</h4>
                 <form class="login-Form">
@@ -414,41 +416,77 @@
                         <input type="text" class="userInput">
                         <label for="username">Password</label>
                         <input type="text" class="userInput">
-                        <div class="loginFormContainer">
-                            <div>
-                                <input type="checkbox" name="" id="rememberme">
-                                <label for="rememberme">Remember me</label>
-                            </div>
-                            <div>
-                                <a href="">Forgot Password</a>
-                            </div>
-                        </div>
 
-                        <input type="submit" value="Sign In" class="loginBtn">
+                        <input type="submit" value="Sign up" class="signupBtn">
+                        <p class="text-old-user">Already have an account? <span class="old-user-login">Log in</span></p>
                 </form>
         </div>
     </dialog>
       <!-- JavaScript -->
     <script>
-        const modal = document.querySelector('[data-modal]')
-        const opeBtn = document.querySelector('.login-modal')
-        opeBtn.addEventListener('click',()=> {
-            modal.showModal()
-            document.body.style.overflowY = 'hidden';
-        })
-        const dialog = document.querySelector("dialog")
-        dialog.addEventListener("click", e => {
-        const dialogDimensions = dialog.getBoundingClientRect()
-        if (
-            e.clientX < dialogDimensions.left ||
-            e.clientX > dialogDimensions.right ||
-            e.clientY < dialogDimensions.top ||
-            e.clientY > dialogDimensions.bottom
-        ) {
-            dialog.close()
-            document.body.style.overflowY = 'scroll';
+
+        // Function to open the specified modal
+function openModal(target) {
+    const modal = document.querySelector(`[data-modal="${target}"]`);
+    if (modal) {
+        modal.showModal();
+        document.body.style.overflowY = 'hidden';
+    }
+}
+
+// Function to close the currently open modal
+function closeModal() {
+    const openModal = document.querySelector('dialog[open]');
+    if (openModal) {
+        openModal.close();
+        document.body.style.overflowY = 'scroll';
+    }
+}
+
+// Add click event listeners to the buttons
+const modalButtons = document.querySelectorAll('[data-target]');
+modalButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        const target = e.target.getAttribute('data-target');
+        if (target === 'login' || target === 'signup') {
+            closeModal(); // Close any open modal
+            openModal(target); // Open the selected modal
         }
-        })
+    });
+});
+
+// Add click event listener to close modal on overlay click
+const dialog = document.querySelectorAll("dialog");
+
+dialog.forEach(dialogs => {
+    dialogs.addEventListener("click", (e) => {
+    const dialogDimensions = dialogs.getBoundingClientRect();
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        closeModal();
+    }
+});
+});
+
+
+// dialog.addEventListener("click", (e) => {
+//     const dialogDimensions = dialog.getBoundingClientRect();
+//     if (
+//         e.clientX < dialogDimensions.left ||
+//         e.clientX > dialogDimensions.right ||
+//         e.clientY < dialogDimensions.top ||
+//         e.clientY > dialogDimensions.bottom
+//     ) {
+//         closeModal();
+//     }
+// });
+
+
+
     </script>
 </body>
 </html>
