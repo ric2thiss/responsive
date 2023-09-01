@@ -981,3 +981,54 @@ dialog::backdrop {
 input:hover, input:focus{
     border: 1px solid var(--primary-color);
 }
+
+
+
+
+
+/* Search */
+.search-container{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00000048;
+    height: 100%;
+    width: 100%;
+    
+}
+.inner-container-search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 500px;
+    border-radius: 0px 20px 20px 20px;
+    border: 1px solid #595959;
+    z-index: 99;
+}
+.search-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none !important;
+    border-radius: 0px 20px 20px 20px;
+    color: #fff;
+}
+.search-input:focus, .search-input:hover{
+    outline: none !important;
+    border: none;
+}
+.search-button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+}
