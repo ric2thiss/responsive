@@ -439,6 +439,9 @@ h1 span{
     resize: none;
     padding: 10px;
 }
+.textarea:hover, .textarea:focus{
+    border: 1px solid var(--primary-color);
+}
 .form-inputs{
     display: flex;
     flex-direction: column;
@@ -916,4 +919,7 @@ dialog::backdrop {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+input:hover, input:focus{
+    border: 1px solid var(--primary-color);
 }
