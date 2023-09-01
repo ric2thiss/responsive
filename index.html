@@ -418,75 +418,65 @@
                         <input type="text" class="userInput">
 
                         <input type="submit" value="Sign up" class="signupBtn">
-                        <p class="text-old-user">Already have an account? <span class="old-user-login">Log in</span></p>
+                        <p class="text-old-user">Already have an account? <span class="old-user-login" onclick="reOpenLoginModal('login')">Log in</span></p>
                 </form>
         </div>
     </dialog>
       <!-- JavaScript -->
     <script>
-
         // Function to open the specified modal
-function openModal(target) {
-    const modal = document.querySelector(`[data-modal="${target}"]`);
-    if (modal) {
-        modal.showModal();
-        document.body.style.overflowY = 'hidden';
-    }
-}
 
-// Function to close the currently open modal
-function closeModal() {
-    const openModal = document.querySelector('dialog[open]');
-    if (openModal) {
-        openModal.close();
-        document.body.style.overflowY = 'scroll';
-    }
-}
 
-// Add click event listeners to the buttons
-const modalButtons = document.querySelectorAll('[data-target]');
-modalButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        const target = e.target.getAttribute('data-target');
-        if (target === 'login' || target === 'signup') {
-            closeModal(); // Close any open modal
-            openModal(target); // Open the selected modal
+        function openModal(target) {
+            const modal = document.querySelector(`[data-modal="${target}"]`);
+            if (modal) {
+                modal.showModal();
+                
+                document.body.style.overflowY = 'hidden';
+            }
         }
-    });
-});
 
-// Add click event listener to close modal on overlay click
-const dialog = document.querySelectorAll("dialog");
+        function reOpenLoginModal(e){
+            openModal(e);
+        }
 
-dialog.forEach(dialogs => {
-    dialogs.addEventListener("click", (e) => {
-    const dialogDimensions = dialogs.getBoundingClientRect();
-    if (
-        e.clientX < dialogDimensions.left ||
-        e.clientX > dialogDimensions.right ||
-        e.clientY < dialogDimensions.top ||
-        e.clientY > dialogDimensions.bottom
-    ) {
-        closeModal();
-    }
-});
-});
+        // Function to close the currently open modal
+        function closeModal() {
+            const openModal = document.querySelector('dialog[open]');
+            if (openModal) {
+                openModal.close();
+                document.body.style.overflowY = 'scroll';
+            }
+        }
 
+        // Add click event listeners to the buttons
+        const modalButtons = document.querySelectorAll('[data-target]');
+        modalButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const target = e.target.getAttribute('data-target');
+                if (target === 'login' || target === 'signup') {
+                    closeModal(); // Close any open modal
+                    openModal(target); // Open the selected modal
+                }
+            });
+        });
 
-// dialog.addEventListener("click", (e) => {
-//     const dialogDimensions = dialog.getBoundingClientRect();
-//     if (
-//         e.clientX < dialogDimensions.left ||
-//         e.clientX > dialogDimensions.right ||
-//         e.clientY < dialogDimensions.top ||
-//         e.clientY > dialogDimensions.bottom
-//     ) {
-//         closeModal();
-//     }
-// });
+        // Add click event listener to close modal on overlay click
+        const dialog = document.querySelectorAll("dialog");
 
-
-
+        dialog.forEach(dialogs => {
+            dialogs.addEventListener("click", (e) => {
+            const dialogDimensions = dialogs.getBoundingClientRect();
+            if (
+                e.clientX < dialogDimensions.left ||
+                e.clientX > dialogDimensions.right ||
+                e.clientY < dialogDimensions.top ||
+                e.clientY > dialogDimensions.bottom
+            ) {
+                closeModal();
+            }
+        });
+        });
     </script>
 </body>
 </html>
