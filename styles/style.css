@@ -136,6 +136,10 @@ li a{
 }
 .sub-ul{
     display: none;
+    position: absolute;
+    left: 66px;
+    top: 0;
+    background:#313131;
 }
 .sub-nav-2:hover .sub-ul {
     display: flex;
