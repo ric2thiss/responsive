@@ -160,6 +160,41 @@
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"Business",
             "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"21",
+            "title":"Blog 3 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
+            "image": "./assets/features/blog.png"
+        }
+        ,
+        {
+            "id":"22",
+            "title":"Blog 4 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
+            "image": "./assets/features/blog.png"
+        }
+        ,
+        {
+            "id":"23",
+            "title":"Blog 5 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
+            "image": "./assets/features/blog.png"
+        }
+        ,
+        {
+            "id":"24",
+            "title":"Blog 6 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
+            "image": "./assets/features/blog.png"
         }
     ]
 }

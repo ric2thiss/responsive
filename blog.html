@@ -23,29 +23,126 @@
             flex-wrap: wrap;
             
         }
+        /* .back-icon:hover path {
+            fill: #0F9FF7 !important; 
+            stroke: #0F9FF7 !important; 
+        } */
+        /* svg:hover path {
+            fill: #0F9FF7;
+            stroke: #0F9FF7;
+        } */
+
+
+
+
+        .lds-roller {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            }
+        .lds-roller div {
+            animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            transform-origin: 40px 40px;
+            }
+        .lds-roller div:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fff;
+            margin: -4px 0 0 -4px;
+            }
+        .lds-roller div:nth-child(1) {
+            animation-delay: -0.036s;
+            }
+        .lds-roller div:nth-child(1):after {
+            top: 63px;
+            left: 63px;
+            }
+        .lds-roller div:nth-child(2) {
+            animation-delay: -0.072s;
+            }
+        .lds-roller div:nth-child(2):after {
+            top: 68px;
+            left: 56px;
+            }
+        .lds-roller div:nth-child(3) {
+            animation-delay: -0.108s;
+            }
+        .lds-roller div:nth-child(3):after {
+            top: 71px;
+            left: 48px;
+            }
+        .lds-roller div:nth-child(4) {
+            animation-delay: -0.144s;
+            }
+        .lds-roller div:nth-child(4):after {
+            top: 72px;
+            left: 40px;
+            }
+        .lds-roller div:nth-child(5) {
+            animation-delay: -0.18s;
+            }
+        .lds-roller div:nth-child(5):after {
+            top: 71px;
+            left: 32px;
+            }
+        .lds-roller div:nth-child(6) {
+            animation-delay: -0.216s;
+            }
+        .lds-roller div:nth-child(6):after {
+            top: 68px;
+            left: 24px;
+            }
+        .lds-roller div:nth-child(7) {
+            animation-delay: -0.252s;
+            }
+        .lds-roller div:nth-child(7):after {
+            top: 63px;
+            left: 17px;
+            }
+        .lds-roller div:nth-child(8) {
+            animation-delay: -0.288s;
+            }
+        .lds-roller div:nth-child(8):after {
+            top: 56px;
+            left: 12px;
+            }
+        @keyframes lds-roller {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            }
     </style>
 </head>
 <body>
     <div class="placeholder-5">
         <div class="container">
             <div class="container-hero Blog">
-                <a href="./index.html"><span class="back-links"> <img src="./assets/features/arrow-back.svg" alt=""> Back</span></a>
+                <a href="./index.html"><span class="back-links"> <img src="./assets/features/arrow-back.svg" alt="" class="back-icon"></span></a>
                 <h2>Our Blog</h2>
                 <h1>Our Latest <span>News</span>.</h1>
                 <span class="main-divider"></span>
                 <p>Learn about the latest industry insights, expert advice, and remarkable success stories crafted exclusively to inspire your entrepreneurial spirit and drive your business towards unparalleled growth.</p>
                 <div class="menu-navigation">
-                    <p onclick="display('All')" style="cursor: pointer;">All</p>
-                    <p onclick="display('Marketing')" style="cursor: pointer;">Marketing Tips</p>
-                    <p onclick="display('Business')" style="cursor: pointer;">Business Ops</p>
-                    <p onclick="display('Tech')" style="cursor: pointer;">Tech solutions</p>
-                    <p onclick="display('Design')" style="cursor: pointer;">Design Art</p>
-                    <p onclick="display('Data')" style="cursor: pointer;">Data Insights</p>
-                    <p onclick="display('Content')" style="cursor: pointer;">Content & Branding</p>
-                    <p onclick="display('Financial')" style="cursor: pointer;">Financial Mgmt.</p>
-                    <p onclick="display('Stories')" style="cursor: pointer;">Success Stories</p>
+                    <p class="p-tag" onclick="display('All')" style="cursor: pointer;">All</p>
+                    <p class="p-tag" onclick="display('Marketing')" style="cursor: pointer;">Marketing Tips</p>
+                    <p class="p-tag" onclick="display('Business')" style="cursor: pointer;">Business Ops</p>
+                    <p class="p-tag" onclick="display('Tech')" style="cursor: pointer;">Tech solutions</p>
+                    <p class="p-tag" onclick="display('Design')" style="cursor: pointer;">Design Art</p>
+                    <p class="p-tag" onclick="display('Data')" style="cursor: pointer;">Data Insights</p>
+                    <p class="p-tag" onclick="display('Content')" style="cursor: pointer;">Content & Branding</p>
+                    <p class="p-tag" onclick="display('Financial')" style="cursor: pointer;">Financial Mgmt.</p>
+                    <p class="p-tag" onclick="display('Stories')" style="cursor: pointer;">Success Stories</p>
                 </div>
             </div>
+            <!-- Content Generated by JavaScript with Fetch API -->
             <div class="Card-Container"></div>
             <div class="see-all-container"  style="padding-bottom: 5rem;">
                 <!-- <a href="blog.html" class="see-all-btn">SEE ALL</a> -->
@@ -148,16 +245,25 @@
             }
         })
 
-        function display(prop){
-            Card_Container.textContent = '';
 
-            fetch('./data.json')
+
+
+        function display(prop){
+            // Remove the current content of the selected prop or menu
+            Card_Container.innerHTML = `
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            `;
+
+            setTimeout(()=>{
+                Card_Container.innerHTML = ""
+                fetch('./data.json')
             .then(res => res.json())
             .then(data => {
                 const { blogs } = data;
                 
                 for (let blog of blogs) {
                     if(blog.category === prop){
+
                         // Create DOM elements
                     let dateElement = document.createElement('p');
                     let contentElement = document.createElement('p');
@@ -181,6 +287,8 @@
                     }
                 }
             })
+            }, 2000)
+
         }
     
     </script>

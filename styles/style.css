@@ -576,6 +576,7 @@ footer{
 .links{
     display: flex;
     gap: 38px;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 .Rights{
@@ -922,10 +923,11 @@ dialog::backdrop {
 .back-links{
     position: absolute;
     color: #FFF;
-    right: 6%;
+    right: 3%;
     top: 20%;
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
 }
