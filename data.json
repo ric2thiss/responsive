@@ -6,7 +6,7 @@
             "date": "August 2, 2023",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"All",
-            "image": "./assets/features/blog.png"
+            "image": "./assets/features/all1.png"
         },
         {
             "id":"2",
@@ -14,7 +14,7 @@
             "date": "August 2, 2023",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"All",
-            "image": "./assets/features/blog.png"
+            "image": "./assets/features/all2.png"
         },
         {
             "id":"3",
@@ -22,7 +22,7 @@
             "date": "August 2, 2023",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"All",
-            "image": "./assets/features/blog.png"
+            "image": "./assets/features/all3.png"
         },
         {
             "id":"4",

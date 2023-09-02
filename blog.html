@@ -7,32 +7,110 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .menu-navigation{
+            display: flex; 
+            gap: 1.7rem; 
+            padding:10px;
+            color: #FFF;
+            text-align: center;
+            font-family: 'Poppins',sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            
+        }
+    </style>
 </head>
 <body>
     <div class="placeholder-5">
         <div class="container">
             <div class="container-hero Blog">
-                <a href="./index.html"><span class="back-links">Back</span></a>
+                <a href="./index.html"><span class="back-links"> <img src="./assets/features/arrow-back.svg" alt=""> Back</span></a>
                 <h2>Our Blog</h2>
                 <h1>Our Latest <span>News</span>.</h1>
                 <span class="main-divider"></span>
                 <p>Learn about the latest industry insights, expert advice, and remarkable success stories crafted exclusively to inspire your entrepreneurial spirit and drive your business towards unparalleled growth.</p>
-                <div style="display: flex; gap: 2rem;">
+                <div class="menu-navigation">
                     <p onclick="display('All')" style="cursor: pointer;">All</p>
-                    <p onclick="display('Marketing')" style="cursor: pointer;">Marketing</p>
-                    <p onclick="display('Design')" style="cursor: pointer;">Design</p>
+                    <p onclick="display('Marketing')" style="cursor: pointer;">Marketing Tips</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Business Ops</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Tech solutions</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Design Art</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Data Insights</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Content & Branding</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Financial Mgmt.</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Success Stories</p>
                 </div>
             </div>
             <div class="Card-Container"></div>
-            <div class="see-all-container">
+            <div class="see-all-container"  style="padding-bottom: 5rem;">
                 <!-- <a href="blog.html" class="see-all-btn">SEE ALL</a> -->
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-container container">
+            <div>
+                <img src="./assets/features/footer-logo.svg" alt="" class="footer-logo">
+            </div>
+            <div class="quick-links">
+                <div class="company">
+                    <p class="title-links">
+                        company
+                    </p>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Project Protection</a>
+                    <a href="">FAQs</a>
+                    <a href="">Blog</a>
+                </div>
+                <div class="company">
+                    <p class="title-links">
+                        Services
+                    </p>
+                    <a href="">Design & Art</a>
+                    <a href="">Cotent Creation</a>
+                    <a href="">Creative Writing</a>
+                    <a href="">Business & Operational</a>
+                    <a href="">Assistance</a>
+                    <a href="">Marketing</a>
+                    <a href="">Accounting & Finance</a>
+                    <a href="">Technology Development</a>
+                </div>
+            </div>
+            <div class="news-letter">
+                <form class="form-for-newsletter">
+                    <label for="email">subscribe to our newsletter</label>
+                    <div class="input-for-email">
+                        <input type="email" class="email" id="email">
+                        <input type="submit" value="Subscribe" class="subscribe-btn">
+                    </div>
+                </form>
+
+                <div class="social-links">
+                    <p>Follow us on</p>
+                    <div class="links">
+                        <img src="./assets/fb.svg" alt="">
+                        <img src="./assets/ig1.svg" alt="">
+                        <img src="./assets/ig.svg" alt="">
+                        <img src="./assets/twitter.svg" alt="">
+                        <img src="./assets/tiktok.svg" alt="">
+                        <img src="./assets/pin.svg" alt="">
+                        <img src="./assets/yt.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="Rights">Copyright &copy; 2023 Viking Universe. All Rights Reserved.</p><br/>
+    </footer>
     <script>
         // Declare Global Variable
         const Card_Container = document.querySelector('.Card-Container')
         const Blog = document.querySelector('.Blog')
+        
         Blog.style.paddingTop = '1rem'
 
 
@@ -70,7 +148,7 @@
         })
 
         function display(prop){
-            Card_Container.innerHTML = '';
+            Card_Container.textContent = '';
 
             fetch('./data.json')
             .then(res => res.json())

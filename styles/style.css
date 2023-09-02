@@ -923,8 +923,13 @@ dialog::backdrop {
     position: absolute;
     color: #FFF;
     right: 6%;
+    top: 20%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
 
 
 /* Signup modal */
