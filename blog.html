@@ -17,8 +17,10 @@
                 <h1>Our Latest <span>News</span>.</h1>
                 <span class="main-divider"></span>
                 <p>Learn about the latest industry insights, expert advice, and remarkable success stories crafted exclusively to inspire your entrepreneurial spirit and drive your business towards unparalleled growth.</p>
-                <div>
-                    <p>All</p>
+                <div style="display: flex; gap: 2rem;">
+                    <p onclick="display('All')" style="cursor: pointer;">All</p>
+                    <p onclick="display('Marketing')" style="cursor: pointer;">Marketing</p>
+                    <p onclick="display('Design')" style="cursor: pointer;">Design</p>
                 </div>
             </div>
             <div class="Card-Container"></div>
@@ -30,7 +32,12 @@
     <script>
         // Declare Global Variable
         const Card_Container = document.querySelector('.Card-Container')
-    
+        const Blog = document.querySelector('.Blog')
+        Blog.style.paddingTop = '1rem'
+
+
+
+
         fetch('./data.json')
         .then(res => res.json())
         .then(data => {
@@ -61,6 +68,42 @@
                 }
             }
         })
+
+        function display(prop){
+            Card_Container.innerHTML = '';
+
+            fetch('./data.json')
+            .then(res => res.json())
+            .then(data => {
+                const { blogs } = data;
+                
+                for (let blog of blogs) {
+                    if(blog.category === prop){
+                        // Create DOM elements
+                    let dateElement = document.createElement('p');
+                    let contentElement = document.createElement('p');
+                    let imgElement = document.createElement('img');
+                    let titleElement = document.createElement('h2');
+        
+                    // Set content and attributes for the elements
+                    dateElement.textContent = blog.date;
+                    contentElement.textContent = blog.content;
+                    imgElement.src = blog.image;
+                    titleElement.textContent = blog.title;
+        
+                    let div = document.createElement('div');
+                    div.classList.add('card');
+                    div.appendChild(imgElement);
+                    div.appendChild(titleElement);
+                    div.appendChild(dateElement);
+                    div.appendChild(contentElement);
+        
+                    Card_Container.appendChild(div);
+                    }
+                }
+            })
+        }
+    
     </script>
     
 </body>

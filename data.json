@@ -71,6 +71,70 @@
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"All",
             "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"10",
+            "title":"Blog 10 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"11",
+            "title":"Blog 11 Design & Art title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Design",
+            "image": "./assets/features/blog.png"
         }
     ]
 }
