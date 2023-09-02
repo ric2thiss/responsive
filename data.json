@@ -74,55 +74,7 @@
         },
         {
             "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Marketing",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"10",
-            "title":"Blog 10 Marketing title",
+            "title":"Blog 1 Marketing title",
             "date": "August 2, 2023",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
             "category":"Marketing",
@@ -130,10 +82,83 @@
         },
         {
             "id":"11",
-            "title":"Blog 11 Design & Art title",
+            "title":"Blog 2 Marketing title",
             "date": "August 2, 2023",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"Design",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"12",
+            "title":"Blog 3 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"13",
+            "title":"Blog 4 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"14",
+            "title":"Blog 5 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"15",
+            "title":"Blog 6 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"16",
+            "title":"Blog 7 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"17",
+            "title":"Blog 8 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"18",
+            "title":"Blog 9 Marketing title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Marketing",
+            "image": "./assets/features/blog.png"
+        }
+        ,
+        {
+            "id":"19",
+            "title":"Blog 1 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
+            "image": "./assets/features/blog.png"
+        },
+        {
+            "id":"20",
+            "title":"Blog 2 Business title",
+            "date": "August 2, 2023",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category":"Business",
             "image": "./assets/features/blog.png"
         }
     ]
