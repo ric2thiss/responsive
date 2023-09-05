@@ -148,6 +148,21 @@ li a{
     display: flex;
     flex-direction: column;
 }
+/* Ul or sub list of the Branding */
+.brandingItems, .reportsItems {
+    display: none;
+    position: absolute;
+    left: 101%;
+    top: 0;
+    background: #313131;
+    border-radius: 0px 20px 20px 20px;
+}
+/* Show .brandingItems when hovering over .branding */
+.branding:hover .brandingItems ,.reports:hover .reportsItems {
+    display: flex;
+    flex-direction: column;
+}
+
 .services-icon-arrow:hover .sub-nab{
     display: flex;
     flex-direction: column;

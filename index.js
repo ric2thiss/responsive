@@ -25,3 +25,103 @@ const playButton = document.querySelector('.about-btn')
         videoElement.pause();
         videoContainer.style.display = "none"
     })
+
+
+     // Function to open the specified modal
+
+
+     function openModal(target) {
+        const modal = document.querySelector(`[data-modal="${target}"]`);
+        if (modal) {
+            modal.showModal();
+            
+            document.body.style.overflowY = 'hidden';
+        }
+    }
+
+    function reOpenLoginModal(e){
+        openModal(e);
+    }
+
+    // Function to close the currently open modal
+    function closeModal() {
+        const openModal = document.querySelector('dialog[open]');
+        if (openModal) {
+            openModal.close();
+            document.body.style.overflowY = 'scroll';
+        }
+    }
+
+    // Add click event listeners to the buttons
+    const modalButtons = document.querySelectorAll('[data-target]');
+    modalButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            const target = e.target.getAttribute('data-target');
+            if (target === 'login' || target === 'signup') {
+                closeModal(); // Close any open modal
+                openModal(target); // Open the selected modal
+            }
+        });
+    });
+
+    // Add click event listener to close modal on overlay click
+    const dialog = document.querySelectorAll("dialog");
+
+    dialog.forEach(dialogs => {
+        dialogs.addEventListener("click", (e) => {
+        const dialogDimensions = dialogs.getBoundingClientRect();
+        if (
+            e.clientX < dialogDimensions.left ||
+            e.clientX > dialogDimensions.right ||
+            e.clientY < dialogDimensions.top ||
+            e.clientY > dialogDimensions.bottom
+        ) {
+            closeModal();
+        }
+    });
+    });
+
+    const searchIcon = document.querySelector('.search-icon');
+    const searchContainer = document.querySelector('.search-container');
+    const searchInput = document.querySelector('.search-input');
+
+    searchIcon.addEventListener('click', (e) => {
+    // Prevent the click event from propagating to the container
+    e.stopPropagation();
+
+    // Display the search container
+    searchContainer.style.display = 'block';
+    // Disable vertical scrolling on the body
+    document.body.style.overflowY = 'hidden';
+
+    // Later, if you want to enable scrolling again, you can use:
+    // document.body.style.overflowY = 'auto';
+
+
+    // Add a click event listener to the document to close the container when clicking outside
+    searchContainer.addEventListener('click', closeSearchContainer);
+    });
+
+    // Function to close the search container
+    function closeSearchContainer(e) {
+    if (e.target !== searchInput) {
+        // If the clicked element is not the search input, hide the container
+        searchContainer.style.display = 'none';
+        document.body.style.overflowY = 'scroll';
+
+        // Remove the click event listener from the document
+        document.removeEventListener('click', closeSearchContainer);
+    }
+    }
+
+    // Prevent the click inside the container from closing it
+    searchContainer.addEventListener('click', (e) => {
+    e.stopPropagation();
+    });
+
+
+    // Save Data to LocalStorage
+    function SaveData(e){
+        localStorage.setItem('id',e)
+        location.href = './service.html'
+    }
