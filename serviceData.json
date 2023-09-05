@@ -1,0 +1,14 @@
+{
+        "designart": [
+            {
+                "id":"1",
+                "title":"Design Art",
+                "subTitle": "Test Title Here",
+                "date": "August 2, 2023",
+                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+                "category":"Design&Art",
+                "image": "./assets/features/all1.png"
+            }
+        
+        ]
+}

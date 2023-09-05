@@ -63,6 +63,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Hero Section -->
+
     <div class="placeholder-1">
         <div class="container Hero">
             <div class="container-hero">
@@ -78,7 +81,10 @@
             </div>
         </div>
     </div>
+
     <!-- Services Section -->
+
+
     <div class="placeholder-2">
         <div class="container" id="service">
             <div class="container-hero Services">
@@ -88,7 +94,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus.</p>
             </div>
             <div class="grid">
-                <div class="cell">
+                <div class="cell" onclick="SaveData(1)">
                     <img src="./assets/features/cell1.svg" alt="">
                     <p class="cell-label">Design & Art</p>
                     <p class="cell-title">Spart your creativity, inspire with <span class="span">design</span>.</p>
@@ -536,6 +542,13 @@
         searchContainer.addEventListener('click', (e) => {
         e.stopPropagation();
         });
+
+
+        // Save Data to LocalStorage
+        function SaveData(e){
+            localStorage.setItem('id',e)
+            location.href = './service.html'
+        }
 
     </script>
 </body>
