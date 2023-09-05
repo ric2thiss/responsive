@@ -20,6 +20,43 @@ body{
 .placeholder {
     background: var(--secondary-color);
 }
+.placeholder-1{
+    background-image: url('../assets/background/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.placeholder-2{
+    background-image: url('../assets/background/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.placeholder-3{
+    background-image:url("../assets/background/3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.placeholder-4{
+    background-image: url('../assets//background/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.placeholder-5{
+    background-image: url('../assets//background/5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.placeholder-6{
+    background-image: url('../assets//background/6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.placeholder-7{
+    background-image: url('../assets//background/7.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .container {
     max-width: 100%;
@@ -202,12 +239,48 @@ h1 span{
     background-color: transparent;
     border: 0;
     color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     display: flex;
     align-items: center;
     gap: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+/* Video After clicking the about btn */
+#video-Container{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: .3s;
+    display: none;
+}
+
+#video-Container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.651);
+    backdrop-filter: blur(3px);
+    z-index: -1; /* Ensure it's behind the content */
+}
+
+video{
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 1000%;
+    /* z-index: 99; */
+    transform: translate(-50%, -50%);
 }
 
 /* Service Section */
@@ -277,18 +350,11 @@ h1 span{
 .divider {
     display: none; /* Hide the divider on mobile */
 }
-.Benefits{
-    padding-top: 5rem;
-}
-.About {
+.Benefits, .About, .Blog, .Services {
     padding-top: 5rem;
 }
 .Blog{
-    padding-top: 5rem;
     position: relative;
-}
-.Services {
-    padding-top: 5rem;
 }
 .Hero {
     padding-top: 2rem;
@@ -563,7 +629,9 @@ textarea{
     background-color: transparent;
 }
 
-/* Next to fix is the mobile version */
+
+
+/* Next to fix is the higher px version */
 
 @media screen and (min-width:768px) {
     .container-hero{
@@ -722,7 +790,7 @@ textarea{
 
 @media screen and (min-width: 1440px) {
     .container,.form-container{
-        max-width: 1200px;
+        max-width: 1250px;
         margin: auto;
     }
     .Hero{
