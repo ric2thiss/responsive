@@ -149,7 +149,11 @@ li a{
     flex-direction: column;
 }
 /* Ul or sub list of the Branding */
-.brandingItems, .reportsItems {
+.brandingItems, 
+.reportsItems,
+.outdoorLists,
+.businessLists,
+.merchandiseLists {
     display: none;
     position: absolute;
     left: 101%;
@@ -157,8 +161,12 @@ li a{
     background: #313131;
     border-radius: 0px 20px 20px 20px;
 }
-/* Show .brandingItems when hovering over .branding */
-.branding:hover .brandingItems ,.reports:hover .reportsItems {
+/* Show when hovering over */
+.branding:hover .brandingItems ,
+.reports:hover .reportsItems,
+.outdoor:hover .outdoorLists,
+.business:hover .businessLists,
+.merchandise:hover .merchandiseLists {
     display: flex;
     flex-direction: column;
 }
