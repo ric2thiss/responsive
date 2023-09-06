@@ -15,15 +15,16 @@ const playButton = document.querySelector('.about-btn')
     const videoElement = document.querySelector('video');
     playButton.addEventListener('click', () => {
         document.body.style.overflowY = "hidden"
-        videoContainer.style.display = 'block'
-        videoElement.style.left = '50%'
+        // videoContainer.style.display = 'block'
+        videoContainer.style.left = '0'
+        // videoElement.style.left = '50%'
         videoElement.play();
     });
 
     videoContainer.addEventListener('click',() => {
         document.body.style.overflowY ="scroll";
         videoElement.pause();
-        videoContainer.style.display = "none"
+        videoContainer.style.left = "1000%"
     })
 
 
