@@ -126,3 +126,7 @@ const playButton = document.querySelector('.about-btn')
         localStorage.setItem('id',e)
         location.href = './service.html'
     }
+
+
+    // Do not make the background Move
+    // Background-attachment
