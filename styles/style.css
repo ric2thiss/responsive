@@ -155,7 +155,8 @@ li a{
 .businessLists,
 .merchandiseLists,
 .printLists,
-.photoEditLists {
+.photoEditLists,
+.advertisingLists {
     display: none;
     position: absolute;
     left: 101%;
@@ -170,7 +171,8 @@ li a{
 .business:hover .businessLists,
 .merchandise:hover .merchandiseLists,
 .print:hover .printLists,
-.photoEdit:hover .photoEditLists {
+.photoEdit:hover .photoEditLists,
+.advertising:hover .advertisingLists {
     display: flex;
     flex-direction: column;
 }
