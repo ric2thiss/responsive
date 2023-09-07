@@ -156,7 +156,11 @@ li a{
 .merchandiseLists,
 .printLists,
 .photoEditLists,
-.advertisingLists {
+.videoEditingLists,
+.contentWritingLists,
+.profandbusinessWritingLists,
+.proofreadEditingLists,
+.transcriptLists {
     display: none;
     position: absolute;
     left: 101%;
@@ -172,7 +176,11 @@ li a{
 .merchandise:hover .merchandiseLists,
 .print:hover .printLists,
 .photoEdit:hover .photoEditLists,
-.advertising:hover .advertisingLists {
+.videoEditing:hover .videoEditingLists,
+.contentWriting:hover .contentWritingLists,
+.profandbusinessWriting:hover .profandbusinessWritingLists,
+.proofreadEditing:hover .proofreadEditingLists,
+.transcript:hover .transcriptLists {
     display: flex;
     flex-direction: column;
 }
@@ -308,7 +316,7 @@ reminder to fix this*/
 
 video{
     width: 50%;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     /* z-index: 99; */
