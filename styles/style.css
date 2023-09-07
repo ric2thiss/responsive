@@ -288,18 +288,16 @@ h1 span{
     cursor: pointer;
 }
 
-/* Video After clicking the about btn */
-/* There is side effect using the left 1000 position
-reminder to fix this*/
-#video-Container{
+/* The Video of About us will slide in when clicking the Play Button on hero page */
+#video-Container {
     position: absolute;
     z-index: 99;
     top: 0;
-    left: 1000%;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    transition: 1s;
-    /* display: none; */
+    transform: translateX(100%); /* Initially, move the element outside the viewport */
+    transition: transform 1s; /* Apply transition to the transform property */
 }
 
 #video-Container::before {

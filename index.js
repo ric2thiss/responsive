@@ -15,16 +15,14 @@ const playButton = document.querySelector('.about-btn')
     const videoElement = document.querySelector('video');
     playButton.addEventListener('click', () => {
         document.body.style.overflowY = "hidden"
-        // videoContainer.style.display = 'block'
-        videoContainer.style.left = '0'
-        // videoElement.style.left = '50%'
+        videoContainer.style.transform = 'translateX(0)';
         videoElement.play();
     });
 
     videoContainer.addEventListener('click',() => {
         document.body.style.overflowY ="scroll";
         videoElement.pause();
-        videoContainer.style.left = "1000%"
+        videoContainer.style.transform = 'translateX(100%)';
     })
 
 
@@ -95,7 +93,7 @@ const playButton = document.querySelector('.about-btn')
     // Disable vertical scrolling on the body
     document.body.style.overflowY = 'hidden';
 
-    // Later, if you want to enable scrolling again, you can use:
+    // Later, want to enable scrolling again, you can use:
     // document.body.style.overflowY = 'auto';
 
 
@@ -126,7 +124,3 @@ const playButton = document.querySelector('.about-btn')
         localStorage.setItem('id',e)
         location.href = './service.html'
     }
-
-
-    // Do not make the background Move
-    // Background-attachment
