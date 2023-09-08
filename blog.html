@@ -122,6 +122,9 @@
     </style>
 </head>
 <body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
     <div class="placeholder-5">
         <div class="container">
             <div class="container-hero Blog">
@@ -212,6 +215,19 @@
         Blog.style.paddingTop = '1rem'
 
 
+      // Preloader
+      window.addEventListener('load', function () {
+        // Get the preloader element
+        const preloader = document.querySelector('.preloader');
+    
+        // Add a CSS class to trigger the fade-out effect
+        preloader.classList.add('fade-out');
+    
+        // Set a timeout to remove the preloader after the animation is complete
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 2000); // Adjust the duration to match your CSS transition duration
+    });
 
 
         fetch('./data.json')

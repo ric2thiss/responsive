@@ -124,3 +124,21 @@ const playButton = document.querySelector('.about-btn')
         localStorage.setItem('id',e)
         location.href = './service.html'
     }
+
+
+
+    // Preloader
+    window.addEventListener('load', function () {
+        // Get the preloader element
+        const preloader = document.querySelector('.preloader');
+    
+        // Add a CSS class to trigger the fade-out effect
+        preloader.classList.add('fade-out');
+    
+        // Set a timeout to remove the preloader after the animation is complete
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 3000); // Adjust the duration to match your CSS transition duration
+    });
+    
+    
