@@ -13,41 +13,129 @@
         <div class="container" id="service">
             <div class="container-hero Services">
                 <h2>Services</h2>
-                <h1>Lorem ipsum <span>lorem</span> ipsum.</h1>
+                <a href="./index.html"><span class="back-links"> <img src="./assets/features/arrow-back.svg" alt="" class="back-icon"></span></a>
+                <h1 class="title">Lorem ipsum <span>lorem</span> ipsum.</h1>
                 <span class="main-divider"></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus.</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus.</p>
             </div>
 
             <div class="grid">
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-container container">
+            <div>
+                <img src="./assets/features/footer-logo.svg" alt="" class="footer-logo">
+            </div>
+            <div class="quick-links">
+                <div class="company">
+                    <p class="title-links">
+                        company
+                    </p>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Project Protection</a>
+                    <a href="">FAQs</a>
+                    <a href="">Blog</a>
+                </div>
+                <div class="company">
+                    <p class="title-links">
+                        Services
+                    </p>
+                    <a href="">Design & Art</a>
+                    <a href="">Cotent Creation</a>
+                    <a href="">Creative Writing</a>
+                    <a href="">Business & Operational</a>
+                    <a href="">Assistance</a>
+                    <a href="">Marketing</a>
+                    <a href="">Accounting & Finance</a>
+                    <a href="">Technology Development</a>
+                </div>
+            </div>
+            <div class="news-letter">
+                <form class="form-for-newsletter">
+                    <label for="email">subscribe to our newsletter</label>
+                    <div class="input-for-email">
+                        <input type="email" class="email" id="email">
+                        <input type="submit" value="Subscribe" class="subscribe-btn">
+                    </div>
+                </form>
+
+                <div class="social-links">
+                    <p>Follow us on</p>
+                    <div class="links">
+                        <img src="./assets/fb.svg" alt="">
+                        <img src="./assets/ig1.svg" alt="">
+                        <img src="./assets/ig.svg" alt="">
+                        <img src="./assets/twitter.svg" alt="">
+                        <img src="./assets/tiktok.svg" alt="">
+                        <img src="./assets/pin.svg" alt="">
+                        <img src="./assets/yt.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="Rights">Copyright &copy; 2023 Viking Universe. All Rights Reserved.</p><br/>
+    </footer>
     <script>
        const ServicesSection = document.querySelector('.Services')
-       ServicesSection.style.paddingTop = '5rem'
+    //    change the current data using the data on JSON
+       const title = document.querySelector('.title')
+       const paragraph = document.querySelector('.paragraph')
+       ServicesSection.style.paddingTop = '3rem'
 
-       const param = localStorage.getItem('key')
-       console.log(param)
-       fetch("./serviceData.json")
-       .then(res => res.json())
-       .then(data => {
-        const {services} = data
-            for(let serve of services ){
-                if(serve.title === param){
-                    // fetch("./serviceData.json")
-                    // .then(res => res.json())
-                    // .then(data => {
-                    //     const {services} = data
-                    //     for(let o of services){
-                    //         console.log(o)
-                    //     }
-                    // })
-                    console.log(serve.sub)
+       const param = parseInt(localStorage.getItem('key'));
 
+       const backLinks = document.querySelector('.back-links')
+       backLinks.style.right = '10%'
+       backLinks.style.top = '20%'
+       
+        console.log(param);
 
+        fetch("./serviceData.json")
+        .then(res => res.json())
+        .then(data => {
+            const { services } = data;
+            for (let i = 0; i < services.length; i++) {
+            if (param === services[i].id) {
+                const service = services[i];
+                title.textContent = service.title;
+                paragraph.textContent = service.content;
+
+                // Access the menu data within the specific service
+                const menu = service.menu;
+                for (let menuItem in menu) {
+                    // console.log(menuItem)
+                    if (menu.hasOwnProperty(menuItem)) {
+                        const menuData = menu[menuItem];
+                        for(let singledata of menuData){
+                            const menuItemDivs = document.createElement('div');
+                            menuItemDivs.classList.add("cell");
+                            menuItemDivs.innerHTML = `
+                            <img src="./assets/features/cell1.svg" alt="">
+                            <p class="cell-title">${menuItem}</p>
+                            <span id="cell-divider" class="main-divider"></span>
+                            <p class="cell-desc">${singledata.content}</p>
+                            `
+
+                            const grid =document.querySelector('.grid')
+                            grid.appendChild(menuItemDivs)
+                        }
+                        // Do something with menuData (e.g., console.log it)
+                        // Create HTML elements to display the menu data
+                    
+                    }
                 }
             }
-       })
+            }
+        });
+
+
+       function back(){
+        localStorage.clear('key')
+        window.location = './index.html'
+       }
     </script>
 </body>
 </html>

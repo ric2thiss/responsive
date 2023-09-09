@@ -1,44 +1,79 @@
 {
-        "services": [
-            {
-                "id":"1",
-                "title":"designart",
-                "subTitle": "Test Title Here",
-                "date": "August 2, 2023",
-                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-                "category":"Design&Art",
-                "image": "./assets/features/all1.png",
-                "sub" :
-                [
+    "services": [
+        {
+            "id": 1,
+            "title": "Design & Art",
+            "page": "Services",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. ",
+            "category": "arts",
+            "image": "./assets/features/all1.png",
+            "menu": {
+                "Branding": [
                     {
-                        "id":"1",
-                        "title":"new",
-                        "subTitle": "Test Title Here",
-                        "date": "August 2, 2023",
-                        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-                        "category":"Design&Art",
-                        "image": "./assets/features/all1.png"
+                        "id": 1,
+                        "title": "Branding",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. "
+                    }
+                ],
+                "Reports & Presentation": [
+                    {
+                        "id": 2,
+                        "title": "Reports & Presentation",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus. "
+                    }
+                ],
+                "Outdoor Signage": [
+                    {
+                        "id": 2,
+                        "title": "Outdoor Signage",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus."
                     }
                 ]
-            },
-            {
-                "id":"2",
-                "title":"contentCreation",
-                "subTitle": "Test Title Here",
-                "date": "August 2, 2023",
-                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-                "category":"Design&Art",
-                "image": "./assets/features/all1.png"
-            },
-            {
-                "id":"3",
-                "title":"Design Art1",
-                "subTitle": "Test Title Here",
-                "date": "August 2, 2023",
-                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-                "category":"Design&Art",
-                "image": "./assets/features/all1.png"
+                ,
+                "Business & Marketing": [
+                    {
+                        "id": 2,
+                        "title": "Business & Marketing",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus."
+                    }
+                ]
+                ,
+                "Merchantdise Design": [
+                    {
+                        "id": 2,
+                        "title": "Merchantdise Design",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus."
+                    }
+                ]
+                ,
+                "Print Design": [
+                    {
+                        "id": 2,
+                        "title": "Print Design",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus."
+                    }
+                ]
+                ,
+                "Photo Editing": [
+                    {
+                        "id": 2,
+                        "title": "Photo Editing",
+                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mi vitae lacus venenatis aliquet. Nunc semper felis in elit commodo cursus. Nulla facilisi. Cras pulvinar faucibus libero, ac facilisis lectus. Suspendisse quis nunc auctor, interdum mi sed, tempus mi. Sed suscipit leo nec odio feugiat, eget bibendum nisl dapibus."
+                    }
+                ]
             }
-        
-        ]
+        },
+        {
+            "id": 2,
+            "title": "Content Creation",
+            "page": "Services",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
+            "category": "Design&Art",
+            "image": "./assets/features/all1.png",
+            "nestedObject": {
+                "nestedProperty1": "AnotherValue1",
+                "nestedProperty2": "AnotherValue2"
+            }
+        }
+    ]
 }
