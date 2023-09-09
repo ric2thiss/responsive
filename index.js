@@ -121,7 +121,7 @@ const playButton = document.querySelector('.about-btn')
 
     // Save Data to LocalStorage
     function SaveData(e){
-        localStorage.setItem('id',e)
+        localStorage.setItem('key',e)
         location.href = './service.html'
     }
 

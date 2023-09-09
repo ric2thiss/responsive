@@ -25,6 +25,29 @@
     <script>
        const ServicesSection = document.querySelector('.Services')
        ServicesSection.style.paddingTop = '5rem'
+
+       const param = localStorage.getItem('key')
+       console.log(param)
+       fetch("./serviceData.json")
+       .then(res => res.json())
+       .then(data => {
+        const {services} = data
+            for(let serve of services ){
+                if(serve.title === param){
+                    // fetch("./serviceData.json")
+                    // .then(res => res.json())
+                    // .then(data => {
+                    //     const {services} = data
+                    //     for(let o of services){
+                    //         console.log(o)
+                    //     }
+                    // })
+                    console.log(serve.sub)
+
+
+                }
+            }
+       })
     </script>
 </body>
 </html>
