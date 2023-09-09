@@ -33,13 +33,16 @@
 .logo {
     width: 200px; /* Adjust the size of your logo */
     height: auto;
-    animation: floatAnimation 2s infinite alternate; /* Adjust the duration as needed */
+    animation: floatAnimation 5s infinite alternate; /* Adjust the duration as needed */
 }
 
 /* Animation for floating effect */
 @keyframes floatAnimation {
     0% {
         transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Adjust the scaling factor for the floating effect */
     }
     100% {
         transform: scale(1.1); /* Adjust the scaling factor for the floating effect */
@@ -52,7 +55,7 @@ body{
 
 .fade-out {
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* Adjust the duration and timing function as needed */
+    transition: opacity 5s ease-in-out; /* Adjust the duration and timing function as needed */
 }
 /* --------------------------------- */
 
