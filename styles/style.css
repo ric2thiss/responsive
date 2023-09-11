@@ -143,6 +143,7 @@ li{
     cursor: pointer;
     transition: .3s;
     list-style-type: none;
+    width: 100%;
 }
 /* li:hover{
     box-shadow: 2px 2px #071229;
@@ -196,6 +197,16 @@ li a{
 .sub-nav-2:hover .sub-ul {
     display: flex;
     flex-direction: column;
+}
+.arrow{
+    display: none;
+}
+.sub-nav-2:hover .arrow{
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: var(--primary-color);
 }
 /* Ul or sub list of the Branding */
 .brandingItems, 
