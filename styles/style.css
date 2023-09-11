@@ -39,15 +39,18 @@
 /* Animation for floating effect */
 @keyframes floatAnimation {
     0% {
-        transform: scale(1);
+        transform: scale(0.5); /* Start smaller */
     }
-    50% {
-        transform: scale(1.05); /* Adjust the scaling factor for the floating effect */
+    80% {
+        transform: scale(0.8); /* Quickly grow bigger */
     }
     100% {
-        transform: scale(1.1); /* Adjust the scaling factor for the floating effect */
+        transform: scale(.5); /* Return to smaller size */
     }
+
 }
+
+
 
 body{
     overflow-x: hidden;
@@ -197,6 +200,18 @@ li a{
 }
 .arrow{
     display: none;
+}
+.arrow1{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    color: var(--primary-color);
+}
+.arrow2 {
+    position: absolute;
+    right: 12px;
+    top: 37%;
+    color: var(--primary-color);
 }
 .sub-nav-2:hover .arrow{
     display: block;

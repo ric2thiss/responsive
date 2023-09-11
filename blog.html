@@ -123,7 +123,7 @@
 </head>
 <body>
     <div class="preloader">
-        <div class="spinner"></div>
+        <img src="./assets/features/logo.png" alt="Viking Universe Asset Logo" class="logo">
     </div>
     <div class="placeholder-5">
         <div class="container">
@@ -215,8 +215,8 @@
         Blog.style.paddingTop = '1rem'
 
 
-      // Preloader
-      window.addEventListener('load', function () {
+       // Preloader
+    window.addEventListener('load', function () {
         // Get the preloader element
         const preloader = document.querySelector('.preloader');
     
@@ -226,7 +226,7 @@
         // Set a timeout to remove the preloader after the animation is complete
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 2000); // Adjust the duration to match your CSS transition duration
+        }, 5000); // Adjust the duration to match your CSS transition duration
     });
 
 

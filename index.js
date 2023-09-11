@@ -138,7 +138,7 @@ const playButton = document.querySelector('.about-btn')
         // Set a timeout to remove the preloader after the animation is complete
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 3000); // Adjust the duration to match your CSS transition duration
+        }, 5000); // Adjust the duration to match your CSS transition duration
     });
     
     
