@@ -39,14 +39,30 @@
 /* Animation for floating effect */
 @keyframes floatAnimation {
     0% {
-        transform: scale(0.5); /* Start smaller */
+        transform: translateY(10px);
+    } 
+    40% {
+        transform: translateY(-10px); 
     }
     80% {
-        transform: scale(0.8); /* Quickly grow bigger */
+        transform: translateY(10px); 
     }
     100% {
-        transform: scale(.5); /* Return to smaller size */
+        transform: scale(.5);
     }
+    /* 0% {
+        transform: scale(.5);
+    } 
+    40% {
+        transform: scale(1);
+    } 
+    80% {
+        transform: scale(.5);
+    } 
+    100% {
+        transform: scale(1);
+    }  */
+
 
 }
 
