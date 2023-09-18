@@ -49,30 +49,6 @@
             "image": "./assets/features/blog.png"
         },
         {
-            "id":"7",
-            "title":"Blog 7 title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"All",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"8",
-            "title":"Blog 8 title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"All",
-            "image": "./assets/features/blog.png"
-        },
-        {
-            "id":"9",
-            "title":"Blog 9 title",
-            "date": "August 2, 2023",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nulla eget massa tincidunt feugiat.",
-            "category":"All",
-            "image": "./assets/features/blog.png"
-        },
-        {
             "id":"10",
             "title":"Blog 1 Marketing title",
             "date": "August 2, 2023",
