@@ -141,4 +141,40 @@ const playButton = document.querySelector('.about-btn')
         }, 5000); // Adjust the duration to match your CSS transition duration
     });
     
-    
+
+    // Faq Sections Js
+
+    // const faqItems = document.querySelectorAll('.faq-item');
+
+    // faqItems.forEach(item => {
+    //     const question = item.querySelector('.accord');
+    //     const answer = item.querySelector('.faq-details');
+
+    //     question.addEventListener('click', () => {
+    //         alert(question.textContent)
+    //         if (answer.style.display === 'none' || answer.style.display === '') {
+    //             answer.style.display = 'block';
+    //         } else {
+    //             answer.style.display = 'none';
+    //         }
+    //     });
+    // });
+
+    const faqItems = document.querySelectorAll('.faq-item');
+    console.log(faqItems)
+
+    faqItems.forEach(item => {
+        item.addEventListener('click',()=>{
+            const accord = item.querySelector('.accord')
+            const desc = item.querySelector('.faq-details')
+            if(desc.style.display === 'block'){
+                desc.style.display = 'none';
+                accord.classList.remove('text-transform')
+            }else if(desc.style.display === 'none' ||desc.style.display === '' ){
+                accord.classList.add('text-transform')
+                desc.style.display = 'block';
+            }
+
+        })
+    })
+
